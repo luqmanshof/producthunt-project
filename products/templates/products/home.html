@@ -12,7 +12,7 @@
     <p>{{ product.summary }} . . .</p>
   </div>
   <div class="col-3 row">
-    <a href="{% url 'detail' product.id %}"><button class="btn btn-primary btn-lg btn-block" type="submit" name="button"> Status: <span class="oi oi-caret-top"></span>({{ product.votes_total }}) || <span class="oi oi-caret-bottom"></span>({{ product.downvotes_total }})</button></a>
+    <a href="{% url 'detail' product.id %}"><button class="btn btn-primary btn-lg btn-block" type="submit" name="button"> Update Status: <br> <span class="oi oi-thumb-up"></span>({{ product.votes_total }})  |  <span class="oi oi-thumb-down"></span>({{ product.downvotes_total }})</button></a>
 
     <!-- <div class="col-12">
       <a href="javascript:{document.getElementById('upvote{{ product.id }}').submit()}"><button class="btn btn-primary btn-lg btn-block" type="submit" name="button"><span class="oi oi-caret-top"></span> Upvote {{ product.votes_total }}</button></a>

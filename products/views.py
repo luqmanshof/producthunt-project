@@ -33,6 +33,7 @@ def create(request):
     else:
         return render(request,'products/create.html')
 
+@login_required
 def detail(request, product_id):
     product = get_object_or_404(Product,pk=product_id)
     return render(request,'products/detail.html',{'product':product})
